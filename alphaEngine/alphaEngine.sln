@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "alphaEngine", "alphaEngine\alphaEngine.vcxproj", "{C65DB769-1D80-414D-9210-1BD598ED8A73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C65DB769-1D80-414D-9210-1BD598ED8A73}.Debug|x64.ActiveCfg = Debug|x64
+		{C65DB769-1D80-414D-9210-1BD598ED8A73}.Debug|x64.Build.0 = Debug|x64
+		{C65DB769-1D80-414D-9210-1BD598ED8A73}.Release|x64.ActiveCfg = Release|x64
+		{C65DB769-1D80-414D-9210-1BD598ED8A73}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0733BC2E-AA57-4BFF-BA12-849C554B637C}
+	EndGlobalSection
+EndGlobal
