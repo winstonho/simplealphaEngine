@@ -41,11 +41,15 @@ void Level1::Update(float dt)
 
 void Level1::Draw(void)
 {
+
+	int x = 0, y = 0;
+	AEInputGetCursorPosition(&x, &y);
+
 	AEGfxSetBackgroundColor(0.0f, 0.0f, 0.0f);
 	FontUtil::PrintText(Engine::GetInstance().GetFontID(), 0.5f, 0.5f,1.0f, 1.0f, 1.0f, 1.0f, "This it Level 1");
 	FontUtil::PrintText(Engine::GetInstance().GetFontID(), -0.5f, -0.5f, 1.0f, 1.0f, 1.0f, 1.0f, "Rot %.2f",obj1.deg);
 	FontUtil::PrintText(Engine::GetInstance().GetFontID(), -0.5f, 0.5f, 1.0f, 1.0f, 1.0f, 1.0f, "FPS %.2f", AEFrameRateControllerGetFrameRate());
-
+	FontUtil::PrintText(Engine::GetInstance().GetFontID(), 0.5f, -0.5f, 1.0f, 1.0f, 1.0f, 1.0f, "Mouse Pos{ %d,%d}", x, y);
 	RenderUtil::RenderWithSolidColour(pMesh1, obj1);
 
 
