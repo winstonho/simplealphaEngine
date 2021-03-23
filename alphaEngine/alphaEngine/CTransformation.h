@@ -34,5 +34,6 @@ public:
 	AEMtx33 * GetTransformationMatrix();
 
 	~CTransformation();
+	CTransformation operator *(CTransformation& rhs);
 };
 

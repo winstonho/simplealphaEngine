@@ -3,6 +3,7 @@
 
 #include "AEEngine.h"
 #include "Engine.h"
+#include <Windows.h>
 
 
 void PrintText(int FontID, f32 x, f32 y,f32 scale, float r, float g, float b, char* format, ...)
@@ -67,8 +68,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	/////////////////////
 	Engine::GetInstance().Update();
 
-
-		
 
 		// Drawing object 2 - (first) - No tint
 		//AEGfxSetRenderMode(AE_GFX_RM_TEXTURE);

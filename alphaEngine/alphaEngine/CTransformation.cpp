@@ -69,3 +69,10 @@ AEMtx33 *  CTransformation::GetTransformationMatrix()
 CTransformation::~CTransformation()
 {
 }
+
+CTransformation CTransformation::operator*(CTransformation& rhs)
+{
+	CTransformation temp;
+	AEMtx33Concat(&temp.mat, &this->mat, &rhs.mat);
+	return temp;
+}

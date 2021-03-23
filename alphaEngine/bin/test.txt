@@ -1,0 +1,13 @@
+mindirInDegree:0
+maxdirInDegree:50
+m_minSize:3
+m_maxSize:5
+m_minlifeTime:3
+m_maxlifeTime:5
+m_minSpeed:30
+m_maxSpeed:50
+m_minRadius:100
+m_maxRadius:150
+m_minAngleInDeg:50
+m_maxAngleInDeg:180
+m_maxParticle:256

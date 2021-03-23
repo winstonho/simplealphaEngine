@@ -8,6 +8,7 @@ namespace MeshUtil
 	AEGfxVertexList* CreateRect(float width, float height, float texU, float texV);
 	
 	//try to do this for circle and trangle yourself.
+	AEGfxVertexList* CreateCircle(float radius);
 
 };
 

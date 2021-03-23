@@ -1,6 +1,7 @@
 #pragma once
 #include "Scene.h"
 #include "GameObject.h"
+#include <vector>
 class Level2 : public Scene
 {
 public:
@@ -70,5 +71,10 @@ private:
 	GameObject obj1;
 	void CleanUp();
 	AEGfxVertexList* pMesh1;
+	AEGfxVertexList* circleMesh1;
+	std::vector<AEVec2> tESTparticale;
+
+	void RenderBlackHole();
+	void RenderFireWorkHole();
 };
 

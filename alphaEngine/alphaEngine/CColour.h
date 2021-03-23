@@ -25,10 +25,10 @@ public:
 	CColour();
 	CColour(float r, float g,float b,float a);
 	CColour(float const (&colour)[4]);
-	float GetR();
-	float GetG();
-	float GetB();
-	float GetA();
+	float GetR() const;
+	float GetG()const;
+	float GetB()const;
+	float GetA()const;
 
 	void SetR(float r);
 	void SetG(float g);
@@ -37,5 +37,9 @@ public:
 
 	void SetRGBA(float r,float g,float b,float a);
 	~CColour();
+
+	CColour operator+ (const CColour& colour);
+	CColour operator- (const CColour& colour);
+	CColour operator* (const float);
 };
 

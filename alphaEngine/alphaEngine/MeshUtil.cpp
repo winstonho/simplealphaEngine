@@ -24,6 +24,23 @@ namespace MeshUtil
 		return temp;
 	}
 
+	AEGfxVertexList* CreateCircle(float radius)
+	{
+		AEGfxVertexList* temp = nullptr;
+		AEGfxMeshStart();
+
+		for (float i = 0; i < 361; ++i)
+		{
+			AEGfxTriAdd(
+				0.0f, 0.0f, 0xFFFFFFFF, 0.0f, 0.0f,
+				AECosDeg(i)* radius, AESinDeg(i) * radius, 0xFFFFFFFF, 0.0f, 0.0f,
+				AECosDeg(i + 1)* radius, AESinDeg(i + 1) * radius, 0xFFFFFFFF, 0.0f, 0.0f);
+		}
+
+		temp = AEGfxMeshEnd();
+		return temp;
+	}
+
 }
 
 

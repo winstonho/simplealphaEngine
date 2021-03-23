@@ -39,22 +39,22 @@ CColour::CColour(float const(&colour)[4])
 {
 }
 
-float CColour::GetR()
+float CColour::GetR()const
 {
 	return this->r_;
 }
 
-float CColour::GetG()
+float CColour::GetG()const
 {
 	return this->g_;
 }
 
-float CColour::GetB()
+float CColour::GetB()const
 {
 	return this->b_;
 }
 
-float CColour::GetA()
+float CColour::GetA()const
 {
 	return this->a_;
 }
@@ -90,4 +90,19 @@ void CColour::SetRGBA(float r, float g, float b, float a)
 
 CColour::~CColour()
 {
+}
+
+CColour CColour::operator+(const CColour& colour)
+{
+	return CColour(r_ + colour.r_, g_ + colour.g_, b_ + colour.b_, a_ + colour.a_);
+}
+
+CColour CColour::operator-(const CColour& colour)
+{
+	return CColour(r_ - colour.r_, g_ - colour.g_, b_ - colour.b_, a_ - colour.a_);
+}
+
+CColour CColour::operator*(const float rhs)
+{
+	return CColour(r_ * rhs, g_ * rhs, b_ * rhs, a_ * rhs);
 }

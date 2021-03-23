@@ -27,7 +27,7 @@ void Engine::Load()
 	sceneManager.SetUp();
 	fontID = AEGfxCreateFont("Resource/Font/Roboto-Regular.ttf", 12);
 	
-	gsm.GSM_Initialize(GS_STATES::GS_LEVEL1);
+	gsm.GSM_Initialize(GS_STATES::GS_LEVEL2);
 	sceneManager.SetLevel(gsm.GetCurrentState());
 }
 void Engine::Update()
